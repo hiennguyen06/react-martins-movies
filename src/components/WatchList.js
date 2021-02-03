@@ -1,6 +1,6 @@
 import React from "react";
 
-const WatchList = ({ watched }) => {
+const WatchList = ({ watched, removeWatched }) => {
     return (
         <>
             <div className="container">
@@ -20,6 +20,12 @@ const WatchList = ({ watched }) => {
                                             : item.poster
                                     }
                                 />
+                                <button
+                                    className="btn-delete"
+                                    onClick={() => removeWatched(item)}
+                                >
+                                    Remove
+                                </button>
                             </div>
                         );
                     })}

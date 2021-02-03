@@ -89,6 +89,11 @@ const Home = () => {
         setSearch("");
     };
 
+    const removeWatched = (movie) => {
+        const newWatchedList = watched.filter((item) => item.id !== movie.id);
+        setWatched(newWatchedList);
+    };
+
     return (
         <div>
             <Header />
@@ -108,7 +113,11 @@ const Home = () => {
                     <h1>"{query}"</h1>
                 </div>
             </div>
-            <WatchList watched={watched} setWatched={setWatched} />
+            <WatchList
+                watched={watched}
+                setWatched={setWatched}
+                removeWatched={removeWatched}
+            />
             <MovieList
                 watched={watched}
                 movies={movies}

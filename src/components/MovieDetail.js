@@ -9,8 +9,6 @@ function Item({ match }) {
     // create a state to put the items in
     const [movieDetail, setMovieDetail] = useState([]);
 
-    // console.log(movieDetail);
-
     const getMovieDetail = async () => {
         const data = await fetch(
             `https://api.themoviedb.org/3/movie/${match.params.id}?api_key=1e448e0dfcdbb565f5d329820065b4d2&language=en-US`

@@ -12,6 +12,7 @@ const WatchList = ({ watched }) => {
                         return (
                             <div key={item.id} className="watched-poster">
                                 <img
+                                    alt="movie poster"
                                     src={
                                         item.poster ===
                                         "https://image.tmdb.org/t/p/w780null"

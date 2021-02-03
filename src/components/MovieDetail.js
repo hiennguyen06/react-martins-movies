@@ -37,7 +37,7 @@ function Item({ match }) {
     return (
         <div className="movie-detail">
             <div className="poster">
-                <img src={poster} />
+                <img src={poster} alt="movie poster" />
             </div>
             <div className="movie-detail-info">
                 <h1>{movieDetail.title}</h1>
@@ -63,6 +63,7 @@ function Item({ match }) {
                 <a
                     href={`https://www.imdb.com/title/${movieDetail.imdb_id}`}
                     target="_blank"
+                    rel="noreferrer"
                     className="btn-main movie-detail-btn"
                 >
                     READ MORE

@@ -17,7 +17,7 @@ const MovieCard = ({ movie, watched, setWatched }) => {
         <div className="movie-card">
             <Link to={`/${movie.id}`} key={movie.id}>
                 <div className="movie-poster">
-                    <img src={poster} />
+                    <img src={poster} alt="movie-poster" />
                 </div>
             </Link>
             <div className="movie-info">

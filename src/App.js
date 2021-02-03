@@ -102,7 +102,7 @@ const Home = () => {
                     <FaSearch className="icon-search" />
                     <input
                         className="search-field"
-                        placeholder="Search movie and press Enter"
+                        placeholder="Search movie and press enter"
                         onChange={handleSearch}
                         type="text"
                         value={search}

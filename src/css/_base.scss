@@ -79,16 +79,22 @@ p {
 }
 
 .btn-watch {
-    background-color: $color-purple;
-    border: 1px solid $color-purple;
+    background-color: transparent;
+    border: 2px solid $color-purple;
     outline: none;
     padding: 8px 2rem;
     border-radius: 6px;
     font-size: 1.5rem;
-    color: #fff;
+    color: $color-purple;
     margin-left: 1rem;
     cursor: pointer;
     font-weight: 700;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: $color-purple;
+        color: #fff;
+    }
 }
 
 .btn-menu {

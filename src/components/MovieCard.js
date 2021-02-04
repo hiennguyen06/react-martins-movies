@@ -22,7 +22,10 @@ const MovieCard = ({ movie, watched, setWatched }) => {
             </Link>
             <div className="movie-info">
                 <div>
-                    <h1>{movie.title}</h1>
+                    <h1>
+                        {movie.title} ({movie.release_date})
+                    </h1>
+
                     <p className="rating">
                         <FaStar className="star"></FaStar>
                         {movie.rating} / 10

@@ -69,7 +69,7 @@ const Home = () => {
                         description: result.overview,
                         poster: `https://image.tmdb.org/t/p/w780${result.poster_path}`,
                         rating: result.vote_average,
-                        release_date: result.release_date,
+                        release_date: result.release_date.substring(0, 4),
                         watched: false,
                     };
                 })
